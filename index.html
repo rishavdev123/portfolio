@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Liter&family=Playwrite+TZ+Guides&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="navbar-container">
+            <div class="logo">
+                Rishav
+            </div>
+            <ul class="navbar-links" id="navbarLinks">
+                <li>
+                    <a href="#">Home</a>
+                    <div class="underline"></div>
+                </li>
+               
+                <li>
+                    <a href="#projects">Projects</a>
+                    <div class="underline"></div>
+                </li>
+                <li>
+                    <a href="#skill">Skills</a>
+                    <div class="underline"></div>
+                </li>
+                <li>
+                    <a href="#certificate">Certificate</a>
+                    <div class="underline"></div>
+                </li>
+                <li>
+                     <a href="#contacts">Contact</a>
+                     <div class="underline"></div>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburgerMenu">
+                <div class="firstchild"></div>
+                <div class="secondchild"></div>
+                <div class="lastchild"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="container">
+    </div>
+    
+    <div class="hero">
+        <div class="top">
+            <img src="./assets/rklogo.png" alt="">
+            <div class="text-sec">
+                <h1>Hi, I'm <span class="highlight">Rishav</span></h1>
+                <p>A passionate <span class="highlight">Web Developer</span> crafting modern, responsive, and user-friendly
+                    applications.</p>
+            </div>
+            <div class=" social-about-home">
+                <a href="https://instagram.com/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+                <a href="mailto:your.email@example.com"><i class='bx bxs-envelope'></i></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contacts" class="btn">Contact Me</a>
+            </div>
+        </div>
+    
+
+    </div>
+
+    <div style="height: 5px;background:linear-gradient(30deg, rgb(0, 0, 255,0.7),rgb(255, 165, 0,0.7),rgb(255, 255, 0,0.7));backdrop-filter: blur(10px);"></div>
+
+  <!-- Project Section -->
+  <div class="project-section" id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="./assets/project1.jpeg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>🚀 Age Calculator Web App – Built with HTML, CSS, and JavaScript! 🎉
+
+                – an Age Calculator that instantly calculates age based on the entered birthdate. 🗓️✨</p>
+            <a href="#">View Project</a>
+        </div>
+        
+    </div>
+</div>
+<div style="height: 5px;background:linear-gradient(30deg, rgb(0, 0, 255,0.7),rgb(255, 165, 0,0.7),rgb(255, 255, 0,0.7));backdrop-filter: blur(10px);"></div>
+    <!-- Skill Section -->
+    <div class="skill-main" id="skill">
+        <div class="skills-section" id="skills">
+            <h2>My Skills</h2>
+            
+            <div class="skill" data-skill="90">
+                <div class="skill-title">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+    
+            <div class="skill" data-skill="80">
+                <div class="skill-title">CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+    
+            <div class="skill" data-skill="70">
+                <div class="skill-title">JavaScript</div>
+                <div class="skill-bar">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+    
+            <div class="skill" data-skill="60">
+                <div class="skill-title">React</div>
+                <div class="skill-bar">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+    
+            <div class="skill" data-skill="85">
+                <div class="skill-title">Tailwind</div>
+                <div class="skill-bar">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 5px;background:linear-gradient(30deg, rgb(0, 0, 255,0.7),rgb(255, 165, 0,0.7),rgb(255, 255, 0,0.7));backdrop-filter: blur(10px);"></div>
+    <section class="certification-section" id="certificate">
+        <h2>My Certifications</h2>
+        <div class="certification-grid">
+            <div class="cert-card" onclick="openLightbox('./assets/HTML.jpg')">
+                <img src="./assets/HTML.jpg" alt="Certificate 1">
+                <div class="overlay">View Certificate</div>
+            </div>
+            <div class="cert-card" onclick="openLightbox('./assets/CSS.jpg')">
+                <img src="./assets/CSS.jpg" alt="Certificate 2">
+                <div class="overlay">View Certificate</div>
+            </div>
+            <div class="cert-card" onclick="openLightbox('./assets/JAVASCRIPT.jpg')">
+                <img src="./assets/JAVASCRIPT.jpg" alt="Certificate 3">
+                <div class="overlay">View Certificate</div>
+            </div>
+            <div class="cert-card" onclick="openLightbox('./assets/Reactjs.jpg')">
+                <img src="./assets/Reactjs.jpg" alt="Certificate 3">
+                <div class="overlay">View Certificate</div>
+            </div>
+            <div class="cert-card" onclick="openLightbox('./assets/Ethicalhacking.jpg')">
+                <img src="./assets/Tailwind.jpg" alt="Certificate 4">
+                <div class="overlay">View Certificate</div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Certificate">
+    </div>
+    <div style="height: 5px;background:linear-gradient(30deg, rgb(0, 0, 255,0.7),rgb(255, 165, 0,0.7),rgb(255, 255, 0,0.7));backdrop-filter: blur(10px);"></div>
+    <section class="contact-section" id="contacts">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"> Instagram
+                </a>
+                <a href="https://github.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub"> GitHub
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"> Facebook
+                </a>
+                <a href="mailto:your-email@example.com">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"> Email Me
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
