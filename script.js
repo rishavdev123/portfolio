@@ -7,7 +7,10 @@ hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('activelogo');
 
 });
-
+function navclickhandle(){
+    navbarLinks.classList.toggle('active');
+    hamburgerMenu.classList.toggle('activelogo');
+}
 
 
 // Setting Up the Dots
