@@ -116,6 +116,7 @@ nav {
     }
     .navbar-links.active {
         background-color: rgba(30, 28, 28, 0.8);
+        pointer-events : all;
         backdrop-filter: blur(10px);
         opacity: 1;
         max-height: 400px;
